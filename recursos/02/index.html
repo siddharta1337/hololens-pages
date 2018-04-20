@@ -1,0 +1,34 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Base WebGL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script type="x-shader/x-vertex" id="vertex-shader">
+        precision mediump float;
+	    attribute vec2 pos;
+	    void main() {
+	      gl_Position = vec4(pos, 0.0, 1.0);
+	    } 
+    </script>
+
+    <script type="x-shader/x-fragment"  id="fragment-shader" >
+
+        precision mediump float;
+        void main() {
+            gl_FragColor = vec4(1.0);
+        }
+    </script>
+    
+</head>
+<body>
+
+    <canvas id="misCanvas" height="500"  width="500"></canvas>
+
+
+    <script src="base.js"></script>  
+</body>
+</html>
